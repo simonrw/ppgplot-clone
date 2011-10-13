@@ -1,2 +1,5 @@
+This is a clone of Maarten Breddels' ppgplot library (http://www.astro.rug.nl/~breddels/python/ppgplot)
+with some alterations made by me for easier installing on my systems.
+
 see INSTALL for installation instruction and example.py for an example
 
