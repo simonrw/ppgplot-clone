@@ -21,7 +21,7 @@ library_dirs = []
 includes.append(os.path.join(get_python_inc(plat_specific=1), "Numeric"))
 if os.name == "posix":
     libraries.append("X11")
-    library_dirs.append("/usr/X11R6/lib/")
+    library_dirs.append("/usr/X11R6/lib64/")
     libraries.append("m")
     libraries.append("g2c")
     includes.append(numpy.get_include())
