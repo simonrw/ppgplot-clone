@@ -19,7 +19,7 @@
 #include <assert.h>
 
 #include <cpgplot.h>
-#include <arrayobject.h>
+#include <numpy/arrayobject.h>
 
 /************************************************************************/
 
