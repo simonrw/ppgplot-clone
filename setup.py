@@ -24,7 +24,8 @@ if os.name == "posix":
     library_dirs.append("/usr/X11R6/lib/")
     libraries.append("m")
     libraries.append("g2c")
-    ttry:
+    includes.append(numpy.get_include())
+    try:
         library_dirs.append(os.environ["PGPLOT_DIR"])
     except KeyError:
         print >>sys.stderr, "WARNING: 'PGPLOT_DIR' env variable is not defined, might not find the libcpgplot.a library"
