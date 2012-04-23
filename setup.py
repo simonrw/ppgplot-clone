@@ -24,7 +24,8 @@ if os.name == "posix":
     library_dirs.append("/usr/X11R6/lib64/")
     libraries.append("gfortran")
     libraries.append("m")
-    libraries.append("g2c")
+    libraries.append("png")
+    #libraries.append("g2c")
     includes.append(numpy.get_include())
     try:
         library_dirs.append(os.environ["PGPLOT_DIR"])
