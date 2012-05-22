@@ -326,6 +326,18 @@ PYF(pgqinf)
 }
 
 /*
+ * Added by SRW
+ * pgqwin
+ */
+PYF(pgqwin)
+{
+    float x1, x2, y1, y2;
+    cpgqwin(&x1, &x2, &y1, &y2);
+
+    return Py_BuildValue("ffff", x1, x2, y1, y2);
+}
+
+/*
 	pgpoly(x, y : array)
 */
 PYF(pgpoly)
@@ -2116,6 +2128,7 @@ PYF(pgconl_s)
 /***************************************************************************/
 
 static PyMethodDef PpgMethods[] = {
+    {"pgqwin", pgqwin, 1},                  /* Added by SRW */
     {"pgarro", pgarro, 1},
     {"pgask", pgask,1},
     {"pgband", pgband, 1},
